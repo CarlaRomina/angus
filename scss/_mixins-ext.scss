@@ -1,0 +1,117 @@
+// extend
+
+.btn-1 
+	{
+    background-color: $green;
+    border-color: #B4E197;
+    color: #FFF;
+
+	}
+   .btn-1:hover,  .btn-1:focus {
+      border-color: #6fb03a;
+      background-color: #6fb03a;
+      color: #FFF;
+       }
+     .btn-1:active,  .btn-1:visited, .btn-1:active:focus,  .btn-1:active:hover {
+      border-color: #639d34;
+      background-color: #639d34;
+      color: #FFF; 
+}
+
+.btn-c{
+	@extend .btn-1;
+	flex-direction: inline;
+	width: 100px;
+	
+
+}
+
+.btn-b{
+	@extend .btn-1;
+	border: none;
+
+}
+
+@mixin texto ($size,$line-height,$color){
+	font-size: $size;
+	line-height: $line-height;
+	color: $color;
+	margin: 4px;
+
+}
+
+
+@mixin d-flex($justify, $align){
+	display: flex ;
+	justify-content: $justify;
+	align-items: $align;
+
+}
+
+h2{
+	@include texto (1.2em,1.2em,$green);
+	font-family: fantasy;
+	@include d-flex (center,flex-end);
+}
+
+
+.carousel slide{
+	@include d-flex (center,center);
+
+	}
+
+.caja{
+	@include d-flex (center,center);
+	margin-right: 20px;
+	img{
+		width: 260px;
+		height: 300px;
+		margin-top: 10px;
+
+	}
+	div{
+		height: 230px;
+		margin-bottom: 10px;
+	}
+
+}
+
+// maps
+
+$paleta:(
+	'uno':rgb(131, 189, 117),
+	'dos':rgb(233, 239, 192),
+	'tres':rgba(180, 225, 151, 0.9),
+	'cuatro':rgb(78, 148, 79),
+	'cinco':#4E944F,
+	'seis': rgba(233,239,192,0.9),
+	'siete':#E9EFC0 ,
+
+
+	);
+
+.bg-c{
+	background-color: map-get ($map: $paleta, key:'siete')
+	
+}
+
+
+
+.bg-l{
+	background-image: url(../img/f1.jpg);
+}
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+

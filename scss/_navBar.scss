@@ -1,0 +1,42 @@
+// nesting
+
+#botonera{
+	display: flex;
+	justify-content: center;
+	background: linear-gradient(to bottom,#458D3D, transparent);
+	
+	img{
+		height: 150px;
+	}
+	ul{
+		
+		li{
+			list-style: none;
+		}
+		a{
+			color: $green;
+			font-size: $textLg;
+			font-family: $mainFont;
+		}
+	}
+	
+
+}
+
+#botonera img{
+	width: 150px;
+	height: 120px;
+	
+}
+nav ul li a{
+			font-size: 1rem;
+			color: #0D0D0D !important;
+			
+		}
+
+	nav ul li a:hover{
+			color: #336015;
+			font-weight: 600;
+			font-size:20px;
+			font-size-adjust:30px;
+}
