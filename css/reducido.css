@@ -686,6 +686,8 @@ h2, .h2 {
   justify-content: center;
   align-items: center; }
 
+
+
 .caja {
   display: flex;
   justify-content: center;
@@ -752,12 +754,34 @@ footer {
   footer h3, footer .h3 {
     font-size: 1.2rem; }
 
-.carousel-item > img {
-  height: 75vh;
-  width: 100%;
+/*.carousel-item > img {
+  height: 85vh;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center; }*/
+
+
+@media (min-width: 375px){
+ 
+  .carousel-item > img {
+  height:40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   }
+ 
+}    
+
+@media (min-width: 678px){
+ 
+  .carousel-item > img {
+  height:85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   }
+ 
+}  
 
 .img-log {
   height: 150px;
