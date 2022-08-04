@@ -40,7 +40,7 @@ p{
 .carousel-item > img {
  
   height: 75vh;
-  width:100% !important;
+ 
 }
 
 
@@ -145,6 +145,7 @@ border:0px;
 
 .bg-l{
 	background-image: url(../img/f1.jpg);
+
 	
 }
 
@@ -170,20 +171,6 @@ body {
 
 }
 
-.prod-dest{
-	white-space: nowrap;
-	overflow: hidden;
-	width: 95vw;
-	animation: anim 8s;
-	infinite;
-	align-items: center;
-	
-}
-
-@keyframes anim{
-	from {width: 0;}
-
-}
 
 .img-log2{
 	height: 600px;
@@ -193,7 +180,7 @@ body {
 
 .img-log3{
 	height: 400px;
-	margin-top: 80px;
+	margin-top: 90px;
 }
 
 /*pagina error 404*/
@@ -201,8 +188,8 @@ body {
 
 
 .img404{
-	width: 400px;
-	margin-top: 60px;
+	width: 600px;
+	margin: 60px;
 	
 }
 

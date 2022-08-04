@@ -737,31 +737,35 @@ nav ul li a:hover {
   margin: 0px;
   padding: 0px; }
 
+
+
 body {
   max-width: 100vw;
   overflow-x: hidden; }
 
-body {
-  overflow-x: hidden; }
 
 footer {
   text-align: center;
   margin-top: 30px;
   background-image: url(../img/lupulo.jpeg);
   height: 100px;
-  width: 100%;
   padding: 10px; }
   footer h3, footer .h3 {
     font-size: 1.2rem; }
 
-/*.carousel-item > img {
+.carousel-item > img {
   height: 85vh;
   display: flex;
   justify-content: center;
-  align-items: center; }*/
+  align-items: center;
+  }
 
 
 @media (min-width: 375px){
+  html{
+   overflow-x: hidden;
+
+  }
  
   .carousel-item > img {
   height:40vh;
@@ -769,6 +773,17 @@ footer {
   justify-content: center;
   align-items: center;
    }
+
+  .img-index2{
+  width: 100%;
+  }
+
+  .img-index3{
+  width: 100px;
+  margin-left: 30px;
+
+   }
+ 
  
 }    
 
@@ -789,3 +804,26 @@ footer {
 
 .bg-c {
   background-color: #E9EFC0; }
+
+
+@media (min-width: 1200px){
+  .img-index1{
+  margin-left: 250px;
+
+}
+
+.img-index2{
+  margin-left: 220px;
+  width: 900px;
+
+}
+
+.img-index3{
+  margin-left: 350px;
+
+}
+ 
+  
+ 
+}  
+
